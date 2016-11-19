@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!--
+	Hayward Peirce --> <html> <head>
+<meta charset="utf-8" http-equiv="refresh" content="300">
+<title></title> 
+</head> 
+
+<body> 
+
+<weather>
+
+<iframe title="Environment Canada Weather" src="http://weather.gc.ca/wxlink/wxlink.html?cityCode=on-118&amp;lang=e" width="440px" height="165px" frameborder="0"></iframe>
+<script src="http://www.windfinder.com/wind-cgi/homepageforecast.pl?STATIONSNR=ca25&amp;NUM_DAYS=2&amp;NUM_COLS=2&amp;UNIT_WIND=kts&amp;UNIT_TEMPERATURE=c&amp;UNIT_WAVE=m&amp;UNIT_RAIN=mm" type="text/javascript" language="JavaScript"></script>
+
+<div style=" overflow: hidden; margin: 15px auto; max-width: 575px;">
+<iframe scrolling="no" src="http://weather.gc.ca/radar/index_e.html?id=XFT" style="border: 0px none; margin-left: 0px; height: 750px; margin-top: -260px; width: 500px;">
+</iframe>
+</div>
+
+</weather>
+
+<main>
+
+<centre>
+
+<div style="border: 2px solid #E8E8E8; overflow: hidden; margin: 5px auto; max-width: 970px;">
+<iframe scrolling="no" src="http://192.168.1.164:8081/comingEpisodes/" style="border: 0px none; margin-left: -40px; height: 600px; margin-top: -220px; width: 1050px;">
+</iframe>
+</div>
+
+<yow>
+<div style="border: 2px solid #E8E8E8; overflow: hidden; margin: 15px auto; max-width: 370px;">
+<iframe scrolling="no" src="http://airportguide.com/airport/Canada/Ontario/Ottawa-CYOW-YOW/flight_arrivals.php" style="border: 0px none; margin-left: -15px; height: 1850px; margin-top: -1300px; width: 370px;">
+</iframe>
+</div>
+</yow>
+
+
+<iframe title="Downloads" src="http://192.168.1.164:9091/transmission/web/" width="640" height="300" ></iframe>
+
+<img src="https://nexusapi.dropcam.com/get_image?width=640&amp;uuid=80f9c9d3c8e5455a939a2817044bf0b3">
+
+</centre>
+
+
+<cbc>
+
+<script language="javascript" src="http://www.cbc.ca/cgi-bin/freeheadlines/headlines.cgi?logo=0&cat=98,15,201,26"></script>
+<cbc>
+</main>
+
+</body>
+</html>
+
+<style type="text/css">
+#cbc_div { background: rgb(255, 255, 255); width: 250px; }
+#cbc_div h3 { background: rgb(255, 255, 255); }
+#cbc_div h3 a { color: rgb(168, 38, 43); font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-decoration: none; }
+#cbc_div dl { border-bottom: 1px solid rgb(204, 204, 204); }
+#cbc_div dt a { color: rgb(19, 45, 108); font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
+.cbc_lead { display: none; }
+.cbc_timezone { color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 10px; margin-left: 0px; }
+#cbc_div .dl3, #cbc_div .dl4, #cbc_div .dl5, #cbc_div .dl6 { display: none; }
+</style>
+
+<style>
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px; 
+}
+weather {
+    float:left;
+    width:500px;
+}
+main {  
+    float:right;  
+}
+centre {
+	float:left;
+	width:1050px;
+}
+yow {
+	float:left;
+}
+cbc {
+	float:right;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+</style>
